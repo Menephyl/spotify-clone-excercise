@@ -4,23 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsividade-->
     <title>Spotify  Imersão</title>
-    <link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ <link rel="stylesheet" href="reset.css"> 
+<link rel="stylesheet" href="style.css">
+
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+>
+
 </head>
 <body>
-<h1>Spotify</h1>
 <div class="sidebar"> <!-- div.sidebar-->
-<nav>
-    <div>
-        <a href="">
-            <img src="" alt="">
-    </div>
-</nav>
-</div>
-  
-    <a href="" alt="">
+<nav class="sidebar__navigation">
+    <div class="logo">
 
-    </a>
+        <a href="">
+            <img src="./assets/icons/logo-spotify.png" alt="logo do spotify"> <!-- pastas diferentes,colocando o caminho do objeto linkado --> 
+        </a>
+    </div>
+    <ul>
+        <li><a href="">
+            <span class="fa fa-home"> </span>
+            <span>Inicio</span>
+        </a>
+        </li> <!--colocar um span para estilizar o icone inicio -->
+        <li><a href="">
+            <span class="fa fa-search"> </span>
+            <span>Buscar</span></li></ul></nav>
+<div class="library"> 
+    <div class="library__content">
+        <button class="library__button">
+            <span class="fa fas fa-book"></span>
+            <span>Sua biblioteca</span>
+        </button>
+        <span class="fa fa-plus"></span>
+        </div>
+        <section class="section-playlist"> <!-- casa é div, section são os cômodos-->
+            <div class="section-playlist__content">   <!--BEM CSS PESQUISAR-->
+                <span class="text title">Crie sua primeira playlist</span> <!-- DUAS CLASSES POR ELEMENTO , POR QUE? QUANDO PONTOS EM COMUM COM OUTROS-->
+                <span class="text subtitle">É fácil, vamos te ajudar.</span>
+                <button class="section-playlist__button">
+                    <span>Criar playlist</span>
+                </button>
+            </div>
+        </section>
+        <div class="cookies">
+            <a href="">Cookies</a>
+        <div class="languages">
+            <button class="languages__button"></button>
+                <span class="fa fa-globe"></span>
+                <span> Portugês do Brasil</span>
+        </div>
+        </div>
+    </div>
+ 
+    
 </div>
 </nav>
 
@@ -28,6 +65,4 @@
 </div>
 </body>
 </htmL>
-<script src="main.js">
-
-</script>
+<script src="script.js" type="text/javascript"></script>
