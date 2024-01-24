@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsividade-->
     <title>Spotify  Imersão</title>
- <link rel="stylesheet" href="reset.css"> 
-<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="./src/styles/reset.css"> 
+<link rel="stylesheet" href="./src/styles/vars.css">
+ <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+<link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
 
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
@@ -18,7 +20,7 @@
     <div class="logo">
 
         <a href="">
-            <img src="./assets/icons/logo-spotify.png" alt="logo do spotify"> <!-- pastas diferentes,colocando o caminho do objeto linkado --> 
+            <img src="assets/icons/logo-spotify.png" alt="logo do spotify"> <!-- pastas diferentes,colocando o caminho do objeto linkado --> 
         </a>
     </div>
     <ul>
@@ -52,7 +54,7 @@
         <div class="languages">
             <button class="languages__button"></button>
                 <span class="fa fa-globe"></span>
-                <span> Portugês do Brasil</span>
+                <span> Português do Brasil</span>
         </div>
         </div>
     </div>
@@ -60,9 +62,42 @@
     
 </div>
 </nav>
-
-
 </div>
+<main>
+    <div class="main-conteiner">
+        <nav class="header__navigation">
+            <div class="navigation">
+                <button class="arrow-left">
+                    <img src="./src/assets/icons/small-right.png" alt="Seta
+                    direita">
+                
+                </button>
+                <div class="header_search">
+                    <img src="./src/assets/icons/search.png" alt=""> <!-- quando tem uma img que nao tem conteudo,o melhor seria carregá-la no css por questões de acessibilidade-->
+                    <input id="search-input"  type="text" type="text" maxlength="800" placeholder="O que você quer ouvir?"> <!--id é como identidade e nao é uma boa pratica usar um estilo em mais de um objeto. como o substantivo 
+                    -->
+                </div class="header__login">
+                <button class="subscribe">
+                Inscreva-se</button>
+                <button class="subscribe">Entrar</button>
+                <div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</main>
+<footer class="disclaimer-premium"
+><div class="text">
+    <p class="disclaimer-premium__title">Testar o premium de graça </p>
+    <p class="disclaimer-premium__subtitle">
+        " Inscrava-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito."
+    </p>
+</div>
+<div class="button">
+    <button type="button">Inscreva-se grátis</button>
+</div>
+</footer>
 </body>
 </htmL>
 <script src="script.js" type="text/javascript"></script>
