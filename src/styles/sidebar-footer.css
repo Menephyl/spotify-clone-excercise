@@ -1,7 +1,7 @@
 
 body{
     background-color:#121212;/* ALTERAR SE NECESSÁRIO*/
-    font-family: ver(--font-dm-sans);
+    font-family: var(--font-dm-sans);
 }
 h1{
     color:#fff;
