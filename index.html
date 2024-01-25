@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsividade-->
     <title>Spotify  Imersão</title>
- <link rel="stylesheet" href="./src/styles/reset.css"> 
-<link rel="stylesheet" href="./src/styles/vars.css">
- <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
-<link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
 
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/reset.css"> 
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+   <link rel="stylesheet" href="./src/styles/maincontent.css">
+   <link rel="stylesheet" href="./src/styles/media-queries.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
 >
-
 </head>
 <body>
 <div class="sidebar"> <!-- div.sidebar-->
@@ -74,15 +75,12 @@
                 </button>
                 <div class="header_search">
                     <img src="./src/assets/icons/search.png" alt=""> <!-- quando tem uma img que nao tem conteudo,o melhor seria carregá-la no css por questões de acessibilidade-->
-                    <input id="search-input"  type="text" type="text" maxlength="800" placeholder="O que você quer ouvir?"> <!--id é como identidade e nao é uma boa pratica usar um estilo em mais de um objeto. como o substantivo 
+                    <input id="search-input"  type="text" autocorrect="off" maxlength="800" autocapitalize="off" spellcheck="false" placeholder=" que você quer ouvir?" value=""> <!--id é como identidade e nao é uma boa pratica usar um estilo em mais de um objeto. como o substantivo 
                     -->
                 </div class="header__login">
                 <button class="subscribe">
                 Inscreva-se</button>
                 <button class="subscribe">Entrar</button>
-                <div>
-
-                </div>
             </div>
         </nav>
     </div>
@@ -91,9 +89,7 @@
 ><div class="text">
     <p class="disclaimer-premium__title">Testar o premium de graça </p>
     <p class="disclaimer-premium__subtitle">
-        " Inscrava-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito."
-    </p>
-</div>
+        " Inscrava-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito." </p></div>
 <div class="button">
     <button type="button">Inscreva-se grátis</button>
 </div>
