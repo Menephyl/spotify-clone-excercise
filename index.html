@@ -1,37 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify clone with alura</title>
-  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="src/styles/reset.css">
+  <link rel="stylesheet" href="src/styles/sidebar-footer.css">
+  <link rel="stylesheet" href="src/styles/maincontent.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+    integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="src/assets/icons/favicon.png" type="image/x-icon">
   
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
-    <link rel="stylesheet" href="src/styles/sidebar-footer.css">
-
-
 </head>
-<body> <!--feature - implementar algo novo do trabalho-->
-<div class="sidebar">
-<nav>
-  <a href=""><img src="src/assets/icons/logo-spotify.png" alt="logo do spotify"></a>
-<div>
-  <ul>
-    <li>
-        <a href="">
-          <span></span>
-          <span>Início</span>
-    </li>
-   
-      <span>
 
-      </span>
-    </a>
-    <li>Buscar</li>
-  </ul>
-</div>
-</nav>
+<body> <!--feature - implementar algo novo do trabalho-->
+  <div class="sidebar"> <!--div.sidebar-->
+    <nav class="sidebar__navigation">
+      <div class="logo">
+        <a href=""><img src="src/assets/icons/logo-spotify.png" alt="logo do spotify"></a>
+        <!-- pastas diferentes,colocando o caminho do objeto linkado -->
+        </a>
+      </div>
+      <div>
+        <ul>
+          <li><a href="">
+              <span class="fa fa-home"> </span>
+              <span>início</span>
+            </a>
+          <li>
+            <a href="">
+              <span class="fa fa-search"></span>
+              <span>Buscar</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="library">
+    <div class="library__content">
+      <button class="library__button">
+        <span class="fa fas fa-book"></span>
+        <span>Sua biblioteca</span>
+      </button>
+      <span class="fa fa-plus"></span>
+    </div>
+    <section class="section-playlist">
+      <div class="section-playlist__content">
+        <span class="text title">Crie sua primeira playlist</span>
+        <span class="text subtitle">É fácil, vamos te ajudar.</span>
+        <button class="section-playlist__button">
+          <span>Criar Playlist</span>
+        </button>
+      </div>
+    </section>
+    <div class="cookies"> <a href="">Cookies</a>
+    </div>
+    
+    <div class="languages">
+      <button class="languages__button">
+        <span class="fa fa-globe"></span>
+        <span>Português do Brasil</span>
+      </button>
+    </div>
+  </div>
+  </div>
 </div>
 </body>
+
+<footer class="disclaimer-premium"
+><div class="text">
+    <p class="disclaimer-premium__title">Testar o premium de graça </p>
+    <p class="disclaimer-premium__subtitle">
+        " Inscrava-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito." </p></div>
+<div class="button">
+    <button type="button">Inscreva-se grátis</button>
+</div>
+</footer>
+<main>
+  <div class="main-container">
+    <nav class="header__navigation">
+      <div class="navigation">
+        <button class="arrow-left">
+          <img src="src/assets/icons/small-left.png" alt="seta esquerda">
+        </button>
+        <button class="arrow-right">
+          <img src="src/assets/icons/small-right.png" alt="seta direita">
+        </button>
+
+        <div class="header__search">
+          <img src="./src/assets/icons/search.png" alt="">
+          <input id=search-input type="text" maxlength="800"
+          placeholder="O que você quer ouvir?">
+        </div>
+        <div class="header__login">
+          <button class="subscribe">Inscreva-se </button class="login"><button>Entrar</button>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</main>
 </html>
