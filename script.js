@@ -83,3 +83,5 @@ function displayResults(results) {
   resultArtist.classList.remove("hidden");
   resultArtist.appendChild(artistInfo);
 }* Dessa forma, o nome e o gênero do artista serão exibidos dentro do elemento com a classe "artist-info". Você pode estilizar esse elemento usando CSS para que ele seja exibido da maneira desejada.*/
+
+//

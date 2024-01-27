@@ -30,8 +30,10 @@
  # none: Um elemento com display: none é completamente removido do fluxo de layout e não é renderizado na tela.
 # */
 # * relative:Comportamento em relação a si mesmo: O elemento é posicionado em relação à sua posição original.  Mantém espaço original: O espaço original que o elemento ocuparia não é alterado, mas você pode movê-lo com top, right, bottom ou left. */
-#
+
+# QUAL A DIFERENÇA ENTRE NPX E NPM. NPX EXECUTA A NPM.
 
 
 # /* absolute: Comportamento em relação ao ancestral posicionado mais próximo ou ao elemento raiz (se nenhum ancestral estiver posicionado)  Remove do fluxo normal: O elemento é removido do fluxo normal do documento, o que significa que outros elementos agem como se o elemento não estivesse presente. */
  
+# Tem como utilizar o git bash pelo vs code na criação de api e na aplicação de react
