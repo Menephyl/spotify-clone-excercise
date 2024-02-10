@@ -55,8 +55,7 @@ function displayArtistInfo(result){
     resultsArtist.appendChild(artistInfo);
     
 }
-
-/*
+/*function greeting deve pegar a id greeting e com base no horario saudar o usuário. obs colocar no portifolio /*
 
 Para exibir os elementos de informações, você pode criar um novo elemento HTML dentro do elemento com o id "result-artist" e adicionar as informações desejadas a esse novo elemento. Por exemplo, você pode criar um elemento <div> com a classe "artist-info" e adicionar o nome do artista e o gênero dentro desse elemento.
 
