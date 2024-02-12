@@ -1,4 +1,6 @@
-/* Reset CSS */
+/* Reset CSS 
+Quando perceber conflitos entre classes e suas heranças, uma alteração aqui pode ser util. Ademais, para evitar conflitos, o reset css é excelente e quase indispensável, tanto para o layout como sua responsividade
+*/
 html,
 body,
 div,
@@ -135,3 +137,4 @@ button {
   border: none;
   cursor: pointer;
 }
+
