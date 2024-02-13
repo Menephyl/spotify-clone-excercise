@@ -11,7 +11,7 @@
   
   .header__navigation {
     display: flex;
-    /* ESSES detalhes que tem dentro do display flex, mostra no navegador como fica */
+    /* ESSES detalhes que tem dentro do display flex, mostram no navegador como ficam */
     justify-content: space-between;
     align-items: center;
     padding: 16px;
@@ -90,7 +90,7 @@
   .header__login .login {
     width: 100px;
     height: 48px;
-    color: #121212;
+    color:var(--text-base-dark);
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
@@ -175,12 +175,12 @@
   /* principais são static, relative, absolute, fixed, e sticky. */
   
   .cards {
-    position: relative; /
+    position: relative; 
     width: 220px;
     height: 200px;
     overflow: hidden;
     border-radius: 8px;
-    color: #fff;
+    color: var(--text-base-light);
   }
   
   .cards span {
@@ -363,4 +363,4 @@
   #result-artist {
     padding: 20px 40px;
   }
-  /* FIM CARD ARTISTA */
+ 

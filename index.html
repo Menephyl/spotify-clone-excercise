@@ -3,26 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spotify clone with alura</title>
+  <title>Spotify clone </title>
   <link rel="stylesheet" href="src/styles/reset.css">
   <link rel="stylesheet" href="src/styles/vars.css">
   <link rel="stylesheet" href="src/styles/maincontent.css">
   <link rel="stylesheet" href="src/styles/sidebar-footer.css">
   <link rel="stylesheet" href="src/styles/media-queries.css">
 
-  
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
     integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
     integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+''
   <link rel="shortcut icon" href="src/assets/icons/favicon.png" type="image/x-icon">
 </head>
 <body> <!--feature - implementar algo novo do trabalho-->
   <div class="sidebar"> <!--div.sidebar-->
     <nav class="sidebar__navigation">
       <div class="logo">
-        <a href=""><img src="src/assets/icons/logo-spotify.png" alt="logo do spotify"></a>
-        <!-- pastas diferentes,colocando o caminho do objeto linkado -->
+        <a href="">
+          <img src="src/assets/icons/logo-spotify.png" alt="logo do spotify"></a>
+        <!-- pastas diferentes,colocando o caminho do objeto linkado 
+        DEPOIS DE TUDO OK, REFATORAR UM NOVO BRANCH COM TODO O CONTEUDO INGLÊS. 
+        -->
+
         </a>
       </div>
       <div>
@@ -40,6 +45,7 @@
         </ul>
       </div>
     </nav>
+
     <div class="library">
     <div class="library__content">
       <button class="library__button">
@@ -48,6 +54,7 @@
       </button>
       <span class="fa fa-plus"></span>
     </div>
+
     <section class="section-playlist">
       <div class="section-playlist__content">
         <span class="text title">Crie sua primeira playlist</span>
@@ -57,7 +64,8 @@
         </button>
       </div>
     </section>
-    <div class="cookies"> <a href="">Cookies</a>
+
+    <div class="cookies"> <a href="#">Cookies</a>
     </div>
     
     <div class="languages">
@@ -69,9 +77,15 @@
   </div>
   </div>
 </div>
-</body>
+
+
 <main>
   <div class="main-container">
+    <!-- COMO ASSIM INVERTER AS CLASSES?
+    
+    BODY ESTAVA FORA DO LUGAR. 
+  
+  -->
     <nav class="header__navigation">
       <div class="navigation">
         <button class="arrow-left">
@@ -83,25 +97,27 @@
 
         <div class="header__search">
           <img src="./src/assets/icons/search.png" alt="">
-          <input id=search-input type="text" maxlength="800"
+          <input id=search-input type="text" maxlength="800" autocorrect="off" autocapitalize="off" spellcheck="false"
           placeholder="O que você quer ouvir?">
+           </div>
         </div>
+
          <div class="header__login">
                <button class="subscribe">Inscreva-se </button>
             <button  class="login">Entrar</button>
-        </div>
-      </div>
+        </div>    
     </nav>
 <!-- PLAYLIST -->
 <div class="playlist-container">
   <div id="result-playlists">
     <div class="playlist">
       <!-- COLOCAR O BOM DIA | BOA TARDE | BOA NOITE -->
+      
       <h1 id="greeting"></h1>
       <h2 class="session">Navegar por todas as seções</h2>
     </div>
 
-    <!-- LIST ITEM 1 -->
+    <!-- LIST ITEM 1  LINKAR CADAR CARD A UMA PLAYLIST DO SPOTIFY OFICIAL REFERENTE, TORNANDO O SITE MAIS FUNCIONAL -->
     <div class="offer__scroll-container">
       <div class="offer__list">
         <section class="offer__list-item">
@@ -130,7 +146,7 @@
           </a>
 
           <!-- CARD 4 -->
-          <a href="" class="cards">
+          <a href="" class="cards ">
             <div class="cards card4">
               <img src="./src/assets/playlist/4.jpeg" alt="" />
               <span>Creators</span>
@@ -250,11 +266,10 @@
   </div>
 
 </div>
-
-
   </div>
-  <footer class="disclaimer-premium"
-><div class="text">
+  </main>
+
+    <footer class="disclaimer-premium"><div class="text">
     <p class="disclaimer-premium__title">Testar o premium de graça </p>
     <p class="disclaimer-premium__subtitle">
         " Inscrava-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito." </p></div>
@@ -262,8 +277,10 @@
     <button type="button">Inscreva-se grátis</button>
 </div>
 </footer>
-<script type="text/javascript"  src="script.js"></script>
-</main>
+<script src="script.js" type="text/javascript"></script>
+<script src="search.js" type="text/javascript"></script>
+</body>
+
 </html>
 
 

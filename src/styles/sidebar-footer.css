@@ -1,5 +1,5 @@
 body{
-    background-color: #000;
+    background-color: #3e6980;
     color: #fff;
 }
 .sidebar {
@@ -8,7 +8,7 @@ body{
     left: 0;
     bottom: 0;
     width: 300px;
-    background-color: #000000;
+    background-color: #3e6980;;
     padding: 12px;
 }
 .sidebar .logo{
