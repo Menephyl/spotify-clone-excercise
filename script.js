@@ -28,7 +28,7 @@ greetingElement.textContent = greetingMessage;
 // GRID INTELIGENTE
 const container = document.querySelector(".offer__list-item");
 
-const observer = new ResizeObserver(() => {  //mudanças no tamanho do elemento 
+const observer = new ResizeObserver(() => {  //mudanças no tamanho do eleme.loadnto 
   const containerWidth = container.offsetWidth; //largura total do elemento, incluindo largura do conteúdo, bordas e preenchimento.
   const numColumns = Math.floor(containerWidth / 200); //número de colunas com base na largura do container
 
